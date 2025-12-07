@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Comic Neue', cursive;
+  text-align: center;
+  background-color: #3d3a4b;
+  color: #e3dfff;
+}
+
+h1 {
+  margin-bottom: 70px;
+}
+
+.top {
+  width: 100px;
+  height: 50px;
+  background: rgb(229, 226, 199);
+  font-size: 16px;
+  color: rgb(36, 38, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7mm;
+  outline: 2px solid rgb(36, 38, 34);
+}
+
+.top::before{
+  content:"";
+  width:2px;
+  height:10px;
+  background:rgb(36, 38, 34);
+  position:absolute;
+  bottom:0;
+  left:15%;
+}
+
+.top::after{
+  content:"";
+  width:2px;
+  height:10.5px;
+  background:rgb(36, 38, 34);
+  position:absolute;
+  bottom:0;
+  left:85%;
+}
+
+button:active .bottom{
+  transform: translateY(10px);
+}
+
+.bottom {
+  width: 100px;
+  height: 50px;
+  background: rgb(255, 255, 238);
+  font-size: 16px;
+  color: rgb(36, 38, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7mm;
+  outline: 2px solid rgb(36, 38, 34);
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.bottom::before {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skewX(30deg);
+  transition: 0.25s;
+  position: absolute;
+  left: -30px;
+}
+
+button:active .bottom::before {
+  left: calc(100% + 20px);
+}
+
+button:active .bottom{
+  transform: translateY(10px);
+}
+
+.bottom {
+  width: 100px;
+  height: 50px;
+  background: rgb(255, 255, 238);
+  font-size: 16px;
+  color: rgb(36, 38, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7mm;
+  outline: 2px solid rgb(36, 38, 34);
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.bottom::before {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skewX(30deg);
+  transition: 0.25s;
+  position: absolute;
+  left: -30px;
+}
+
+button:active .bottom::before {
+  left: calc(100% + 20px);
+}
+
+.reset{
+  margin-bottom: 40px;
+}
+.ss{
+  margin-bottom: 65px;
+}
+
+button {
+  position: relative;
+  background: none;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 80px;
+}
